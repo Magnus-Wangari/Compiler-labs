@@ -1,0 +1,29 @@
+int a,b,c;
+float d,e;
+a=b=5;
+c=6;
+if(a>b)
+{
+	c=a-b;
+	e=d-2.0;
+}
+else
+{
+	d=e+6.0;
+	b=a+c;
+}
+int main() {
+	char ch, buffer[15], b[30], logical_op[] = "><", math_op[] = "+-*/=", numer[] = ".0123456789", other[] = ",;\(){}[]'':";
+	ifstream fin("input.txt");
+	int mark[1000] = { 0 };
+	int i, j = 0, kc = 0, ic = 0, lc = 0, mc = 0, nc = 0, oc = 0, aaa = 0;
+	vector < string > k;
+	vector<char >id;
+	vector<char>lo;
+	vector<char>ma;
+	vector<string>nu;
+	vector<char>ot;
+	if (!fin.is_open()) {
+		cout << "error while opening the file\n";
+		exit(0);
+	}
